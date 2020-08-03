@@ -19,7 +19,7 @@ def weather():
 
     # source contain json data from api
     try:
-        source = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' +city+'&units=imperial'+ '&appid=d4641a9ed094dfb971e0603c8ce8b3ff').read()
+        source = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' +city+'&units=imperial'+ '&appid=').read()
     except:
         return abort(404)
     # converting json data to dictionary
